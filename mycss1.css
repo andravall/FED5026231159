@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Inter';
+}
+p {
+    color : black;
+}
+
+a:link {
+    text-decoration: none;
+    color : black;
+}
+a:visited {
+    text-decoration: none;
+    color : black;
+}
+a:hover {
+    text-decoration: none;
+    color : rgb(252, 155, 199);
+    font-weight: bold;
+}
+
+.formatheader {
+    font-size: larger;
+}
