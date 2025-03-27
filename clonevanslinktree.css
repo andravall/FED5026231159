@@ -1,0 +1,245 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url("https://snapnet-cdn.storage.googleapis.com/fonts/avenir-next/AvenirNext-DemiBold.ttf") format("truetype");
+}
+
+/* --- Styling Umum --- */
+body {
+    font-family: AvenirNext, Arial, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between; /* Memastikan ikon rata dengan wrapper */
+    align-items: center;
+    width: 90%; /* Sesuaikan dengan wrapper utama */
+    max-width: 400px; /* Pastikan tidak terlalu lebar */
+    margin: auto; /* Posisikan di tengah */
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative; /* Pastikan tidak fixed dulu */
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px; /* Beri jarak antar ikon */
+}
+
+.header-icons img {
+    width: 24px; /* Sesuaikan ukuran ikon */
+    height: 24px;
+    cursor: pointer;
+}
+
+.share-header {
+    background-color: #b3b3b3; /* Warna abu-abu seperti di gambar */
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.share-header svg {
+    width: 20px;
+    height: 20px;
+    fill: white; /* Warna ikon menjadi putih */
+    stroke: white;
+}
+
+.share-header:hover {
+    background-color: #a0a0a0; /* Warna abu-abu lebih gelap saat hover */
+}
+
+/* --- Tombol Notifikasi & Share --- */
+.notification-button, .share-button {
+    background-color: #b3b3b3; /* Warna abu-abu seperti di gambar */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+    min-height: 35px;
+}
+
+/* Warna hover untuk tombol */
+.notification-button:hover, .share-button:hover {
+    background-color: #a0a0a0; /* Warna abu-abu saat hover */
+}
+
+/* Warna ikon */
+.notification-button svg, .share-button svg {
+    fill: white; /* Warna ikon putih */
+    stroke: white; /* Garis ikon putih */
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+/* Warna ikon saat hover agar tetap putih */
+.notification-button:hover svg, .share-button:hover svg {
+    fill: white; /* Tetap putih saat hover */
+    stroke: white;
+}
+
+/* --- Container Utama --- */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* --- Logo --- */
+.logo {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* --- Link Wrapper --- */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0px black;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    justify-content: center;
+}
+
+/* Hover efek */
+.link-wrapper:hover {
+    box-shadow: 4px 4px 0px black;
+    transform: translateY(2px);
+}
+
+/* --- Link --- */
+.link {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.link:hover {
+    background: transparent;
+}
+
+.link span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* --- Ikon pada Link --- */
+.link-icon, .empty-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.link-wrapper:last-child .link-text {
+    padding-left: 45px;
+}
+
+/* --- Social Media Links --- */
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* --- Share Button di dalam Link --- */
+.share-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.share-button:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.share-button:hover i {
+    color: white;
+}
+
+
+.link-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.link-text {
+    vertical-align: middle;
+    flex-grow: 1;
+}
